@@ -1,0 +1,34 @@
+.second-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px var(--horizontal-padding);
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.second-header__column {
+  width: 33%;
+}
+
+.second-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.second-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.second-header__column i:last-child {
+  margin-left: 10px;
+}
+
+.second-header__column a > i {
+  margin-right: 131px;
+}

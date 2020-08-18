@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/34d1edd609.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Settings | Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="second-header">
+      <div class="second-header__column">
+        <a href="more.html">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="second-header__column">
+        <h1 class="second-header__title">Settings</h1>
+      </div>
+      <div class="second-header__column">
+        <i class="fas fa-search"></i>
+        <!-- <i class="fas fa-bars"></i> -->
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <ul class="settings">
+        <li class="settings__items">
+          <i class="fas fa-flask"></i>
+          <span>Notices</span>
+        </li>
+        <li class="settings__items">
+          <i class="fas fa-bullhorn"></i>
+          <span>Kokoa Lab</span>
+        </li>
+        <li class="settings__items">
+          <span>
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </span>
+          <span class="settings__subtitle">Latest Version</span>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="dot-nav"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+  </body>
+</html>

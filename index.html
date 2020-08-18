@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/34d1edd609.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <!-- 반복되지 않을 것은 id로 작성
+           다른 input들이 있을 수 있는데 form을 id로 작성하면 이 input에만 스타일을 적용할 수 있다! -->
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In"></input>
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+  </body>
+</html>

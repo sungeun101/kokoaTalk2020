@@ -1,0 +1,118 @@
+.recommended-friends {
+  border-top: var(--main-border);
+  color: var(--grey);
+  padding: 15px 0;
+}
+
+.recommended-friends__title,
+.open-header {
+  font-size: 12px;
+}
+
+.recommended-friends span {
+  text-align: center;
+  display: block;
+  margin: 70px 0;
+}
+
+.open-chat {
+  border-top: var(--main-border);
+  color: var(--grey);
+}
+
+.open-header {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.open-header span {
+  opacity: 0.6;
+}
+
+.open-post__title {
+  color: #2e363e;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.divider {
+  width: 1px;
+  height: 15px;
+  background-color: var(--grey);
+  margin: 0 5px;
+}
+
+.open-post__member-status {
+  color: #ffb0e0;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: var(--main-border);
+}
+
+.open-post__photo {
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  color: white;
+  background-color: var(--grey);
+  font-size: 12px;
+}
+
+.open-post__photo:hover i {
+  cursor: pointer;
+  animation: heartbeat 1s linear infinite;
+  will-change: transform;
+  /* 브라우저에게 미리 알려주어 최적화할 시간을 주는것.. 사용 주의! */
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.3);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+  }
+}

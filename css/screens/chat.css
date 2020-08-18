@@ -1,0 +1,178 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 500vh;
+}
+
+#chat-screen .status-bar,
+#chat-screen .second-header {
+  background-color: #abc1d1;
+}
+
+.main-chat {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  animation: fadeIn 0.6s linear;
+}
+
+/* 유용 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.chat__timestamp {
+  background-color: #92a4b2;
+  padding: 7px 10px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.message-row {
+  width: 100%;
+  color: var(--grey);
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.message__author {
+  display: block;
+  padding: 5px 0;
+}
+
+.message__content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 16px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+}
+
+.message-row--me {
+  justify-content: flex-end;
+}
+
+.message-row--me .message__bubble {
+  background-color: var(--yellow);
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  margin-left: 5px;
+  /* order: 1; */
+}
+/* 
+.message-row--me .message__time {
+  order: 0;
+} */
+
+.message-row--me .message__content {
+  flex-direction: row-reverse;
+  /* order보다 간단! */
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding: 5px 10px;
+  margin: 0;
+  color: var(--grey);
+  font-size: 24px;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.reply__column {
+  display: flex;
+  align-items: center;
+}
+
+.reply__column:first-child {
+  margin-right: 10px;
+}
+
+.reply__column:last-child {
+  width: 100%;
+  position: relative;
+}
+
+.reply__column input {
+  width: 100%;
+  border-radius: 25px;
+  height: 35px;
+  padding: 0 10px;
+  border: var(--main-border);
+  transition: all 0.3s ease-in-out;
+}
+
+.reply__column:last-child > i,
+.reply__column button {
+  position: absolute;
+}
+
+.reply__column > i {
+  right: 40px;
+  opacity: 0.6;
+}
+
+.reply__column button {
+  right: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* reply 안에 focus가 있다면, */
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+  width: 0px;
+}
+
+.reply:focus-within .reply__column:last-child {
+  width: 100vw;
+}
+
+.reply:focus-within input {
+  transform: translateX(-5px) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}

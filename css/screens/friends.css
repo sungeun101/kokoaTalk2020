@@ -1,0 +1,64 @@
+#friends-display-link {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  display: block;
+  padding: 13px 0;
+  background-color: #fafafa;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -15px;
+  /* Negative margin also works!! */
+}
+
+#friends-display-link i {
+  color: rbga(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: var(--horizontal-padding);
+}
+
+.friends-screen__channel {
+  margin-top: 20px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  /* forwards는 애니메이션이 끝난 상태를 그대로 유지 */
+  animation-delay: 2s;
+  /* 2초 뒤에 애니메이션 시작..로딩 효과 */
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* html은 그대로 존재하지만 이 element는 무시하도록.. */
+    /* display:none; 하면 opacity가 0라도
+    splash-screen 레이아웃 아래는 건드릴 수 없음.. */
+  }
+}

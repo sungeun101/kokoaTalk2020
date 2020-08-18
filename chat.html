@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/34d1edd609.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Chat | Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="second-header">
+      <div class="second-header__column">
+        <a href="chats.html">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="second-header__column">
+        <h1 class="second-header__title">Bentley</h1>
+      </div>
+      <div class="second-header__column">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Friday, July 24, 2020
+      </div>
+
+      <div class="message-row">
+        <img
+          src="https://i.pinimg.com/originals/ef/78/eb/ef78ebe4527c6f0441d8d0d973cc1cb8.jpg"
+          alt=""
+        />
+        <div class="message-row__data">
+          <span class="message__author">Bentley</span>
+          <div class="message__content">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--me">
+        <div class="message-row__data">
+          <div class="message__content">
+            <span class="message__bubble">Hi Hi</span>
+            <span class="message__time">21:29</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--me">
+        <div class="message-row__data">
+          <div class="message__content">
+            <span class="message__bubble">How are you?</span>
+            <span class="message__time">21:30</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-wink"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+  </body>
+</html>

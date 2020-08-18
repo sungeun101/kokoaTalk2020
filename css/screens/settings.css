@@ -1,0 +1,17 @@
+.settings__items {
+  padding: 20px 0;
+  border-bottom: var(--main-border);
+}
+.settings__items i {
+  padding-right: 10px;
+  opacity: 0.8;
+}
+
+.settings__items:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings__subtitle {
+  color: var(--grey);
+}
