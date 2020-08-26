@@ -1,9 +1,11 @@
 .screen-header {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px var(--horizontal-padding);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
   position: fixed;
   top: 0px;
   width: 100%;
